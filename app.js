@@ -19,7 +19,6 @@ const express = require('express');
 // const https = require("https");
 
 const app = express();
-const PORTs = 443;
 
 app.get('/', (req, res) => {
   res.status(200).send('Hello, world!').end();
@@ -28,7 +27,7 @@ app.get('/', (req, res) => {
 
 // Start the server
 const PORT = 8080;
-app.listen(PORTs, () => {
+app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}`);
   console.log('Press Ctrl+C to quit.');
 });
